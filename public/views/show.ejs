@@ -1,0 +1,45 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST in Detail</title>
+</head>
+
+<body>
+    <h2>Here is your Post Detail:</h2>
+    <p>Post Id: <%= post.id %></p>
+    <div class="post">
+        <h3 class="user">@<%= post.username %></h3>
+        <p class="content"><%= post.content %></p>
+        <br>
+    </div>
+    <br>
+    <a href="/posts">Back to Posts</a>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Detail</title>
+    <link rel="stylesheet" href="/show.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Post Detail</h2>
+    <p class="id">Post ID: <%= post.id %></p>
+    <h3>@<%= post.username %></h3>
+    <p class="content"><%= post.content %></p>
+
+    <a href="/posts" class="back">← Back</a>
+</div>
+
+</body>
+</html>
